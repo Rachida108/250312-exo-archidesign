@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Nunito";
+    color: #414141;
+ }
+
+ body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+ }
+
+ header, footer {
+    background-color: #00748D;
+    background-image: url(../img/path.png);
+    background-position: bottom;
+    background-repeat:repeat-x;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+
+.barre {
+   width: 1200px;
+   display: flex;
+   flex-direction: row;
+   align-items: baseline;
+   justify-content: space-between;
+   padding-top: 20px;
+ }
+ 
+.barre div {
+   display: flex;
+   flex-direction: row;
+   align-items: baseline;
+ }
+
+.barre div p {
+   color: white;
+   font-family: "Fjalla One";
+   font-size: 1.11em;
+ }
+
+.nav-ul {
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.nav-ul li {
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 100px;
+   height: 50px;
+}
+
+.nav-ul li a {
+   font-size: 1.11em;
+   font-family: "Fjalla One";
+   color: white;
+   text-decoration: none;
+   text-align: center;
+}
+
+.nav-ul li a:hover {
+   color: #00748D;
+   background-color: white;
+   height: 50px;
+   width: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+main {
+   display: flex;
+   flex-direction: row;
+   width: 1200px;
+}
+
+h1 {
+   font-size: 1.67em;
+   color: #CB8606;;
+   text-transform: uppercase;
+   font-family: "Fjalla One";
+   padding: 10px 15px;
+   margin-bottom: 5px;
+}
+
+h1::before, h1::after {
+   content: " - ";
+   color: #00748D;
+   font-family: "Fjalla One";
+   font-size: 1.39em;
+}
+
+.gauche {
+   display: flex;
+   flex-direction: column;
+}
+
+.droite
+{
+   display: flex;
+   flex-direction: column;
+}
+
+.realisations {
+   display: grid;
+   grid-template-columns: 4;
+   grid-template-rows: 5;
+}
+
+.bedroom1 {
+   grid-area: 1 / 1 / 1 / 1; 
+}
+.lamp-1 {
+   grid-area: 1 / 2 / 1 / 1; 
+}
+
+
+h2 {
+   color: #00748D;
+   font-family: "Fjalla One";
+   font-size: 1.39em;
+   margin-top: 60px;
+   margin-bottom: 40px;
+}
+
+h2::before, h2::after {
+   content: " - ";
+   color: #CB8606;
+   font-family: "Fjalla One";
+   font-size: 1.39em;
+}
+
+.sidebar {
+   display: flex;
+   flex-direction: column;
+}
+
+
+
+
+.reseaux ul {
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 200px;
+}
+
+.reseaux ul li {
+   display: flex;
+   justify-content: center;
+}
+
+.reseaux ul li i {
+   color: white;
+   font-size: 1.5em;
+}
+
+/* PETIT MOBILE */
+@media screen and (max-width: 630px) {
+   .accueil {
+      width: auto;
+      height: 200px;
+   }
+} 
