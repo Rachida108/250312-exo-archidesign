@@ -36,3 +36,5 @@ L'ensemble des pictos sont des Font Awesome
 
 NAV
     hover : en blanc
+    
+Dans REALISATIONS utiliser la propriété OVERFLOW pour la section "témoignages".
